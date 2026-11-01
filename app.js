@@ -92,6 +92,11 @@ function syncInputs(){
   if(state.compensate)state.Y=compensatedY(state.B);
   $('motor-b').value=state.B;$('motor-y').value=state.Y;$('motor-y').disabled=state.compensate;
   $('zero-y').disabled=state.compensate;
+  for(const [id,value] of [['motor-b',state.B],['motor-y',state.Y]]){
+    const percent=50+value/motorLimitRpm*50;
+    $(id).style.setProperty('--fill-start',`${Math.min(50,percent)}%`);
+    $(id).style.setProperty('--fill-end',`${Math.max(50,percent)}%`);
+  }
   $('motor-y').setAttribute('aria-valuetext',`${state.Y.toFixed(2)} rpm${state.compensate?'，自动补偿':''}`);
   $('b-value').textContent=state.B.toFixed(1);$('y-value').textContent=state.Y.toFixed(2);
   const velocity=transmission(state.B,state.Y);
