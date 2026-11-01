@@ -1,0 +1,1029 @@
+{
+  "sourceDocument": "13ab1368a6025a44d25e7160",
+  "sourceWorkspace": "b7761522e031591b11b5bc16",
+  "sourceElement": "c6256df6d8db638f5b529a88",
+  "coordinateSystem": "CAD Z-up, meters",
+  "pivots": {
+    "B1": [
+      0.05744974687695503,
+      0.021350840106606483,
+      0
+    ],
+    "B23": [
+      0.04499221220612526,
+      0.0008371916483156383,
+      0
+    ],
+    "carrier": [
+      0,
+      0,
+      0
+    ],
+    "Y1": [
+      0.03125033527612686,
+      0.0475502535700798,
+      0
+    ],
+    "Y23": [
+      0,
+      0,
+      0
+    ],
+    "planet": [
+      0.02278001792728901,
+      0.003173449309542775,
+      0
+    ],
+    "wheel": [
+      0.0002647650835569948,
+      3.6884019209537655e-05,
+      -0.041302599012851715
+    ]
+  },
+  "axleDirection": [
+    0.9904355406761169,
+    0.13797606527805328,
+    0
+  ],
+  "phaseCorrectionsRadians": {
+    "B1": 0.24610750349152463,
+    "B23": 0.06295483855453574,
+    "Y4": -2.5597388402146586e-08
+  },
+  "parts": [
+    {
+      "name": "part_000",
+      "sourceLabel": "12x8x3.5 Flanged Bearing",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 12296,
+      "restCenter": [
+        0.0,
+        4.656612873077393e-10,
+        0.008749999571591616
+      ]
+    },
+    {
+      "name": "part_001",
+      "sourceLabel": "12x8x3.5 Flanged Bearing",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 12296,
+      "restCenter": [
+        0.0,
+        9.313225746154785e-10,
+        0.020977999083697796
+      ]
+    },
+    {
+      "name": "part_002",
+      "sourceLabel": "12x8x3.5 Flanged Bearing",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 12296,
+      "restCenter": [
+        0.0,
+        9.313225746154785e-10,
+        0.02495000045746565
+      ]
+    },
+    {
+      "name": "part_003",
+      "sourceLabel": "12x8x3.5 Flanged Bearing",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 12296,
+      "restCenter": [
+        0.02278001792728901,
+        0.003173448727466166,
+        -0.008250000420957804
+      ]
+    },
+    {
+      "name": "part_004",
+      "sourceLabel": "12x8x3.5 Flanged Bearing",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 12296,
+      "restCenter": [
+        0.02278001792728901,
+        0.0031734497752040625,
+        0.00474999996367842
+      ]
+    },
+    {
+      "name": "part_005",
+      "sourceLabel": "62 Tooth x 5mm GT2 3mm Belt",
+      "role": "belt",
+      "motionGroup": "fixed",
+      "triangles": 1184,
+      "restCenter": [
+        0.017535227816551924,
+        0.025683532003313303,
+        0.01859149895608425
+      ]
+    },
+    {
+      "name": "part_006",
+      "sourceLabel": "65mm轮胎",
+      "role": "wheel",
+      "motionGroup": "wheel",
+      "triangles": 102290,
+      "restCenter": [
+        0.00026467256247997284,
+        3.688037395477295e-05,
+        -0.041302599012851715
+      ]
+    },
+    {
+      "name": "part_007",
+      "sourceLabel": "78x60x10 Bearing",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 15724,
+      "restCenter": [
+        0.0,
+        0.0,
+        -0.0049999999737485035
+      ]
+    },
+    {
+      "name": "part_008",
+      "sourceLabel": "7x4x2.5 Flanged Bearing",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 12296,
+      "restCenter": [
+        0.04499221220612526,
+        0.0008371915901079774,
+        -0.0006500000017695129
+      ]
+    },
+    {
+      "name": "part_009",
+      "sourceLabel": "7x4x2.5 Flanged Bearing",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 12296,
+      "restCenter": [
+        0.04499221220612526,
+        0.0008371928706765175,
+        0.02565000019967556
+      ]
+    },
+    {
+      "name": "part_010",
+      "sourceLabel": "8x4x3 Bearing",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 15724,
+      "restCenter": [
+        0.02278001792728901,
+        0.003173448028974235,
+        -0.024500000290572643
+      ]
+    },
+    {
+      "name": "part_011",
+      "sourceLabel": "8x4x3 Bearing",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 15724,
+      "restCenter": [
+        0.02278001792728901,
+        0.0031734484946355224,
+        -0.021499999798834324
+      ]
+    },
+    {
+      "name": "part_012",
+      "sourceLabel": "8x4x3 Flanged Bearing",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 12296,
+      "restCenter": [
+        -0.02381184697151184,
+        -0.00347057671751827,
+        -0.04130300134420395
+      ]
+    },
+    {
+      "name": "part_013",
+      "sourceLabel": "8x4x3 Flanged Bearing",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 12296,
+      "restCenter": [
+        0.02381184697151184,
+        0.0034705729922279716,
+        -0.04130300134420395
+      ]
+    },
+    {
+      "name": "part_014",
+      "sourceLabel": "Hex nut grade A & B M3x0.5",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 820,
+      "restCenter": [
+        -0.024009501561522484,
+        0.009275983087718487,
+        0.0036999995354562998
+      ]
+    },
+    {
+      "name": "part_015",
+      "sourceLabel": "Hex nut grade A & B M3x0.5",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 820,
+      "restCenter": [
+        -0.020560098811984062,
+        -0.015484905801713467,
+        0.003700000699609518
+      ]
+    },
+    {
+      "name": "part_016",
+      "sourceLabel": "Hex nut grade A & B M3x0.5",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 820,
+      "restCenter": [
+        0.020560098811984062,
+        0.015484905801713467,
+        0.003699999302625656
+      ]
+    },
+    {
+      "name": "part_017",
+      "sourceLabel": "Hex nut grade A & B M3x0.5",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 820,
+      "restCenter": [
+        0.024009501561522484,
+        -0.009275983087718487,
+        0.0037000004667788744
+      ]
+    },
+    {
+      "name": "part_018",
+      "sourceLabel": "M4*25双通接柱",
+      "role": "frame",
+      "motionGroup": "fixed",
+      "triangles": 1152,
+      "restCenter": [
+        -0.036500001326203346,
+        -0.03649999760091305,
+        0.012500002048909664
+      ]
+    },
+    {
+      "name": "part_019",
+      "sourceLabel": "M4*25双通接柱",
+      "role": "frame",
+      "motionGroup": "fixed",
+      "triangles": 1152,
+      "restCenter": [
+        -0.016499998047947884,
+        0.06700000539422035,
+        0.012499996460974216
+      ]
+    },
+    {
+      "name": "part_020",
+      "sourceLabel": "M4*25双通接柱",
+      "role": "frame",
+      "motionGroup": "fixed",
+      "triangles": 1152,
+      "restCenter": [
+        0.04965334199368954,
+        0.049653345718979836,
+        0.012499998323619366
+      ]
+    },
+    {
+      "name": "part_021",
+      "sourceLabel": "M4*25双通接柱",
+      "role": "frame",
+      "motionGroup": "fixed",
+      "triangles": 1152,
+      "restCenter": [
+        0.06699999794363976,
+        -0.016499998047947884,
+        0.012500000186264515
+      ]
+    },
+    {
+      "name": "part_022",
+      "sourceLabel": "M4x55半牙螺丝",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 510,
+      "restCenter": [
+        0.00010348018258810043,
+        0.000742828706279397,
+        -0.04130300134420395
+      ]
+    },
+    {
+      "name": "part_023",
+      "sourceLabel": "Prevailing torque nut thin M3x0.50",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 4760,
+      "restCenter": [
+        -0.029698485508561134,
+        -0.02969848643988371,
+        -0.013950000051409006
+      ]
+    },
+    {
+      "name": "part_024",
+      "sourceLabel": "Prevailing torque nut thin M3x0.50",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 4760,
+      "restCenter": [
+        -0.02969848643988371,
+        0.029698485508561134,
+        -0.01395000098273158
+      ]
+    },
+    {
+      "name": "part_025",
+      "sourceLabel": "Prevailing torque nut thin M3x0.50",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 4760,
+      "restCenter": [
+        0.02969848643988371,
+        -0.029698485508561134,
+        -0.013949999120086432
+      ]
+    },
+    {
+      "name": "part_026",
+      "sourceLabel": "Prevailing torque nut thin M3x0.50",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 4760,
+      "restCenter": [
+        0.029698485508561134,
+        0.02969848643988371,
+        -0.01395000098273158
+      ]
+    },
+    {
+      "name": "part_027",
+      "sourceLabel": "Prevailing torque nut thin M4x0.70",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 4760,
+      "restCenter": [
+        -0.02767098695039749,
+        -0.00365291815251112,
+        -0.04130300134420395
+      ]
+    },
+    {
+      "name": "part_028",
+      "sourceLabel": "SPC-RND-ID12-OD14-L1-03",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 402,
+      "restCenter": [
+        0.0,
+        9.313225746154785e-10,
+        0.024500000290572643
+      ]
+    },
+    {
+      "name": "part_029",
+      "sourceLabel": "SPC-RND-ID3.3-OD8-L1-01",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 402,
+      "restCenter": [
+        -0.02969848457723856,
+        -0.02969848457723856,
+        0.0005000011879019439
+      ]
+    },
+    {
+      "name": "part_030",
+      "sourceLabel": "SPC-RND-ID3.3-OD8-L1-01",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 402,
+      "restCenter": [
+        -0.02969848457723856,
+        0.02969848457723856,
+        0.0004999987431801856
+      ]
+    },
+    {
+      "name": "part_031",
+      "sourceLabel": "SPC-RND-ID3.3-OD8-L1-01",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 402,
+      "restCenter": [
+        0.02278001792728901,
+        0.0031734498916193843,
+        0.012500000186264515
+      ]
+    },
+    {
+      "name": "part_032",
+      "sourceLabel": "SPC-RND-ID3.3-OD8-L1-01",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 402,
+      "restCenter": [
+        0.02969848457723856,
+        -0.02969848457723856,
+        0.0005000013043172657
+      ]
+    },
+    {
+      "name": "part_033",
+      "sourceLabel": "SPC-RND-ID3.3-OD8-L1-01",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 402,
+      "restCenter": [
+        0.02969848457723856,
+        0.02969848457723856,
+        0.0004999986267648637
+      ]
+    },
+    {
+      "name": "part_034",
+      "sourceLabel": "SPC-RND-ID4.4-OD5.5-L19.36-04",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 402,
+      "restCenter": [
+        -0.012708455324172974,
+        -0.0017703970661386847,
+        -0.041302599012851715
+      ]
+    },
+    {
+      "name": "part_035",
+      "sourceLabel": "SPC-RND-ID4.4-OD5.5-L5.96-05",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 402,
+      "restCenter": [
+        0.019334127195179462,
+        0.0026934058405458927,
+        -0.041302599012851715
+      ]
+    },
+    {
+      "name": "part_036",
+      "sourceLabel": "SPC-RND-ID8-OD10-L1-02",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 402,
+      "restCenter": [
+        0.0,
+        9.313225746154785e-10,
+        0.023227999918162823
+      ]
+    },
+    {
+      "name": "part_037",
+      "sourceLabel": "Socket button head screw M3x0.5 x 16",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        -0.02969848643988371,
+        -0.02969848643988371,
+        -0.006174999172799289
+      ]
+    },
+    {
+      "name": "part_038",
+      "sourceLabel": "Socket button head screw M3x0.5 x 16",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        -0.02969848643988371,
+        0.02969848643988371,
+        -0.006175001966767013
+      ]
+    },
+    {
+      "name": "part_039",
+      "sourceLabel": "Socket button head screw M3x0.5 x 16",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        0.02969848643988371,
+        -0.02969848643988371,
+        -0.006174999172799289
+      ]
+    },
+    {
+      "name": "part_040",
+      "sourceLabel": "Socket button head screw M3x0.5 x 16",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        0.02969848643988371,
+        0.02969848643988371,
+        -0.006175001966767013
+      ]
+    },
+    {
+      "name": "part_041",
+      "sourceLabel": "Socket button head screw M3x0.5 x 35",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 5954,
+      "restCenter": [
+        -0.024009501561522484,
+        0.009275982389226556,
+        -0.013325000181794167
+      ]
+    },
+    {
+      "name": "part_042",
+      "sourceLabel": "Socket button head screw M3x0.5 x 35",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 5954,
+      "restCenter": [
+        -0.020560098811984062,
+        -0.015484906733036041,
+        -0.013325000181794167
+      ]
+    },
+    {
+      "name": "part_043",
+      "sourceLabel": "Socket button head screw M3x0.5 x 35",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 5954,
+      "restCenter": [
+        0.020560098811984062,
+        0.015484904870390892,
+        -0.013325000181794167
+      ]
+    },
+    {
+      "name": "part_044",
+      "sourceLabel": "Socket button head screw M3x0.5 x 35",
+      "role": "hardware",
+      "motionGroup": "carrier",
+      "triangles": 5954,
+      "restCenter": [
+        0.024009501561522484,
+        -0.009275984251871705,
+        -0.013325000181794167
+      ]
+    },
+    {
+      "name": "part_045",
+      "sourceLabel": "Socket button head screw M3x0.5 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        0.011328738182783127,
+        0.05651169642806053,
+        -0.002175002417061478
+      ]
+    },
+    {
+      "name": "part_046",
+      "sourceLabel": "Socket button head screw M3x0.5 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        0.030312283895909786,
+        0.0375281497836113,
+        -0.002175001776777208
+      ]
+    },
+    {
+      "name": "part_047",
+      "sourceLabel": "Socket button head screw M3x0.5 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        0.0372607447206974,
+        0.06346015818417072,
+        -0.0021750028245151043
+      ]
+    },
+    {
+      "name": "part_048",
+      "sourceLabel": "Socket button head screw M3x0.5 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        0.04153984412550926,
+        0.015340433921664953,
+        -0.0021750008454546332
+      ]
+    },
+    {
+      "name": "part_049",
+      "sourceLabel": "Socket button head screw M3x0.5 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        0.048488304018974304,
+        0.04127243906259537,
+        -0.0021750018349848688
+      ]
+    },
+    {
+      "name": "part_050",
+      "sourceLabel": "Socket button head screw M3x0.5 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5954,
+      "restCenter": [
+        0.06747184693813324,
+        0.022288892418146133,
+        -0.002175000961869955
+      ]
+    },
+    {
+      "name": "part_051",
+      "sourceLabel": "Socket button head screw M4x0.7 x 4",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        -0.02500000037252903,
+        -0.02499999850988388,
+        0.02810000069439411
+      ]
+    },
+    {
+      "name": "part_052",
+      "sourceLabel": "Socket button head screw M4x0.7 x 4",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        -0.02500000037252903,
+        0.03700000047683716,
+        0.028099996969103813
+      ]
+    },
+    {
+      "name": "part_053",
+      "sourceLabel": "Socket button head screw M4x0.7 x 4",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        0.03700000047683716,
+        -0.02499999850988388,
+        0.02810000069439411
+      ]
+    },
+    {
+      "name": "part_054",
+      "sourceLabel": "Socket button head screw M4x0.7 x 4",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        0.03700000047683716,
+        0.03700000047683716,
+        0.028099996969103813
+      ]
+    },
+    {
+      "name": "part_055",
+      "sourceLabel": "Socket button head screw M4x0.7 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        -0.0364999994635582,
+        -0.0364999994635582,
+        0.02510000206530094
+      ]
+    },
+    {
+      "name": "part_056",
+      "sourceLabel": "Socket button head screw M4x0.7 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        -0.0364999994635582,
+        -0.0364999994635582,
+        -9.999843314290047e-05
+      ]
+    },
+    {
+      "name": "part_057",
+      "sourceLabel": "Socket button head screw M4x0.7 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        -0.01650000037625432,
+        0.06700000166893005,
+        0.02509999740868807
+      ]
+    },
+    {
+      "name": "part_058",
+      "sourceLabel": "Socket button head screw M4x0.7 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        -0.01650000037625432,
+        0.06700000166893005,
+        -0.00010000262409448624
+      ]
+    },
+    {
+      "name": "part_059",
+      "sourceLabel": "Socket button head screw M4x0.7 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        0.049653343856334686,
+        0.049653343856334686,
+        0.025099998340010643
+      ]
+    },
+    {
+      "name": "part_060",
+      "sourceLabel": "Socket button head screw M4x0.7 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        0.049653343856334686,
+        0.049653343856334686,
+        -0.00010000215843319893
+      ]
+    },
+    {
+      "name": "part_061",
+      "sourceLabel": "Socket button head screw M4x0.7 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        0.06700000166893005,
+        -0.01650000037625432,
+        -9.999889880418777e-05
+      ]
+    },
+    {
+      "name": "part_062",
+      "sourceLabel": "Socket button head screw M4x0.7 x 6",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 5854,
+      "restCenter": [
+        0.06700000166893005,
+        -0.016499997582286596,
+        0.025100001133978367
+      ]
+    },
+    {
+      "name": "part_063",
+      "sourceLabel": "[Drive] L1 Slave -> L2 Master",
+      "role": "Y23",
+      "motionGroup": "Y23",
+      "triangles": 23284,
+      "restCenter": [
+        3.5915523767471313e-05,
+        -9.872019290924072e-07,
+        0.014914000639691949
+      ]
+    },
+    {
+      "name": "part_064",
+      "sourceLabel": "[Drive] L1 master",
+      "role": "Y1",
+      "motionGroup": "Y1",
+      "triangles": 19244,
+      "restCenter": [
+        0.03125033527612686,
+        0.0475502535700798,
+        0.014245748054236174
+      ]
+    },
+    {
+      "name": "part_065",
+      "sourceLabel": "[Drive] L2 Slave",
+      "role": "Y4",
+      "motionGroup": "planet",
+      "triangles": 10976,
+      "restCenter": [
+        0.02281593345105648,
+        0.003172461874783039,
+        0.009750000201165676
+      ]
+    },
+    {
+      "name": "part_066",
+      "sourceLabel": "[Drive] L3 master",
+      "role": "Y5",
+      "motionGroup": "planet",
+      "triangles": 8608,
+      "restCenter": [
+        0.022759797517210245,
+        0.003130864817649126,
+        -0.006919214501976967
+      ]
+    },
+    {
+      "name": "part_067",
+      "sourceLabel": "[Drive] L3 slave",
+      "role": "Y6",
+      "motionGroup": "wheel",
+      "triangles": 5708,
+      "restCenter": [
+        0.009066754719242454,
+        0.002272217534482479,
+        -0.04130259994417429
+      ]
+    },
+    {
+      "name": "part_068",
+      "sourceLabel": "[Steer] L1 master",
+      "role": "B1",
+      "motionGroup": "B1",
+      "triangles": 6052,
+      "restCenter": [
+        0.05744974501430988,
+        0.02135084057226777,
+        0.014249999076128006
+      ]
+    },
+    {
+      "name": "part_069",
+      "sourceLabel": "[Steer] L1 slave -> L2 master",
+      "role": "B23",
+      "motionGroup": "B23",
+      "triangles": 24140,
+      "restCenter": [
+        0.044992211274802685,
+        0.0008371919393539429,
+        0.012500000651925802
+      ]
+    },
+    {
+      "name": "part_070",
+      "sourceLabel": "[Steer] L2 slave",
+      "role": "B4",
+      "motionGroup": "carrier",
+      "triangles": 29272,
+      "restCenter": [
+        0.0,
+        0.0,
+        0.008349999319761992
+      ]
+    },
+    {
+      "name": "part_071",
+      "sourceLabel": "bearing holder",
+      "role": "frame",
+      "motionGroup": "fixed",
+      "triangles": 4464,
+      "restCenter": [
+        -7.171183824539185e-07,
+        2.518296241760254e-06,
+        -0.0070000000996515155
+      ]
+    },
+    {
+      "name": "part_072",
+      "sourceLabel": "lower plate",
+      "role": "plate",
+      "motionGroup": "fixed",
+      "triangles": 20156,
+      "restCenter": [
+        0.013500001281499863,
+        0.013500001281499863,
+        -0.001000000599246098
+      ]
+    },
+    {
+      "name": "part_073",
+      "sourceLabel": "upper plate",
+      "role": "plate",
+      "motionGroup": "fixed",
+      "triangles": 10536,
+      "restCenter": [
+        0.013500001281499863,
+        0.013500001281499863,
+        0.02599999960511923
+      ]
+    },
+    {
+      "name": "part_074",
+      "sourceLabel": "wheel holder",
+      "role": "fork",
+      "motionGroup": "carrier",
+      "triangles": 4800,
+      "restCenter": [
+        -0.022284798324108124,
+        -0.003104462753981352,
+        -0.02890149923041463
+      ]
+    },
+    {
+      "name": "part_075",
+      "sourceLabel": "wheel holder",
+      "role": "fork",
+      "motionGroup": "carrier",
+      "triangles": 4800,
+      "restCenter": [
+        0.022284800186753273,
+        0.0031044608913362026,
+        -0.02890149923041463
+      ]
+    },
+    {
+      "name": "part_076",
+      "sourceLabel": "ø6xL3径向磁铁",
+      "role": "hardware",
+      "motionGroup": "fixed",
+      "triangles": 200,
+      "restCenter": [
+        0.0,
+        1.0477378964424133e-09,
+        0.02520000096410513
+      ]
+    },
+    {
+      "name": "part_077",
+      "sourceLabel": "电机",
+      "role": "motor",
+      "motionGroup": "fixed",
+      "triangles": 2628,
+      "restCenter": [
+        0.026300587691366673,
+        0.05249999649822712,
+        -0.01750000659376383
+      ]
+    },
+    {
+      "name": "part_078",
+      "sourceLabel": "电机",
+      "role": "motor",
+      "motionGroup": "fixed",
+      "triangles": 2628,
+      "restCenter": [
+        0.05249999649822712,
+        0.026300587691366673,
+        -0.017500003799796104
+      ]
+    },
+    {
+      "name": "part_079",
+      "sourceLabel": "编码器保护盖",
+      "role": "motor",
+      "motionGroup": "fixed",
+      "triangles": 290,
+      "restCenter": [
+        0.026300583966076374,
+        0.05249999649822712,
+        -0.06060001254081726
+      ]
+    },
+    {
+      "name": "part_080",
+      "sourceLabel": "编码器保护盖",
+      "role": "motor",
+      "motionGroup": "fixed",
+      "triangles": 290,
+      "restCenter": [
+        0.05249999649822712,
+        0.026300585828721523,
+        -0.06060001067817211
+      ]
+    }
+  ],
+  "sourceTriangles": 1811928,
+  "displayTriangles": 628806
+}

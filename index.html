@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OmniSwerve · 传动实验室</title><link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+</head><body>
+<header><div class="brand"><span class="brandmark">◎</span><strong>OmniSwerve</strong><span class="branddivider"></span><span>传动实验室</span></div><div class="header-right"><span class="status-dot"></span><span id="asset-status">正在读取 CAD…</span><a href="https://cad.onshape.com/documents/13ab1368a6025a44d25e7160/w/b7761522e031591b11b5bc16/e/c6256df6d8db638f5b529a88" target="_blank" rel="noopener">原始装配 ↗</a></div></header>
+<main>
+<section class="stage" aria-label="交互式三维装配">
+<div class="stage-top"><span id="stage-index">整个传动链</span><button id="back-overview" hidden title="返回整个传动链（Esc）">← 返回整体</button><div class="view-switch" role="group" aria-label="显示模式"><button data-view="full" class="active" aria-pressed="true">完整装配</button><button data-view="open" aria-pressed="false">移开顶板</button><button data-view="cut" aria-pressed="false">只看传动</button></div></div>
+<div id="viewport"><div id="loading"><span class="spinner"></span><strong>载入你的装配模型</strong><span id="load-detail">准备 81 个独立零件…</span></div><svg id="label-lines" aria-hidden="true"></svg><div id="labels"></div></div>
+<div class="view-tools"><button id="reset-camera" title="回到等轴视角">↗ 等轴</button><button id="top-camera">⊙ 俯视</button><button id="side-camera">▣ 侧视</button><label><input type="checkbox" id="show-labels"> 零件标注</label></div>
+<div class="stage-bottom"><span class="interaction-hint">拖动旋转 · 滚轮缩放 · 右键平移 · 点击零件</span><span id="selected-part">选择零件，查看它的作用</span></div>
+</section>
+<aside class="inspector" aria-label="传动控制台">
+  <div class="panel-intro lesson-detail"><p class="eyebrow">MOTION LAB</p><h1 id="lesson-title"></h1><p id="lesson-summary"></p></div>
+  <div class="focus-control"><label for="focus-select">观察范围</label><select id="focus-select"></select></div>
+  <section class="inputs" aria-label="电机输入">
+    <div class="preset-grid" role="group" aria-label="运动预设"><button data-preset="drive">只驱动</button><button data-preset="steer">只转向</button><button data-preset="compensated">补偿转向</button><button data-preset="combined" class="active" aria-pressed="true">组合运动</button></div>
+    <div class="section-heading"><h2>电机输入</h2><span title="电机外部输出轴的指令上限；拖动至 ±10 rpm 内吸附到零，方向键按 1 rpm 微调">±540 rpm</span></div>
+    <div class="motor-control"><div class="motor-row blue"><label for="motor-b"><i></i>B · 转向</label><span><output id="b-value">24.0</output><button id="zero-b" aria-label="B 电机置零" title="B 电机置零">归零</button></span></div><input id="motor-b" type="range" step="1" value="24" list="motor-zero" aria-label="B 转向电机转速"></div>
+    <div class="motor-control"><div class="motor-row yellow"><label for="motor-y"><i></i>Y · 驱动</label><span><output id="y-value">8.00</output><button id="zero-y" aria-label="Y 电机置零" title="Y 电机置零">归零</button></span></div><input id="motor-y" type="range" step="1" value="8" list="motor-zero" aria-label="Y 驱动电机转速"></div>
+    <datalist id="motor-zero"><option value="0" label="0"></option></datalist>
+    <label class="compensate"><span>自动补偿转向</span><input id="compensate" type="checkbox" title="自动调整 Y，让轮子相对轮架不自转"></label>
+  </section>
+  <section class="outputs" aria-label="实时输出"><div class="section-heading"><h2>实时输出</h2><span>rpm</span></div><div class="output-grid"><div><span>转向架</span><strong id="steer-output">0.00</strong><small>相对底盘</small></div><div><span>轮子</span><strong id="wheel-output">0.00</strong><small>相对轮架</small></div></div><p id="motion-note" aria-live="polite"></p></section>
+  <button id="open-details" class="detail-link" aria-haspopup="dialog">传动原理与模型说明 <span>↗</span></button>
+</aside>
+</main>
+<footer><div class="transport"><button id="play" class="primary" disabled>▶ 播放</button><button id="step" title="前进 1/30 模拟秒" disabled>步进</button><button id="reset-motion" title="暂停并将轮架对齐底板，重置演示时间" disabled>归正</button><span class="time"><span id="elapsed">0.00</span> s</span><label>演示速度 <select id="speed"><option value="0.1">0.1×</option><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1× 实时</option></select></label></div><span id="view-note">完整装配 · 81 个原始零件</span></footer>
+<dialog id="details-dialog" aria-labelledby="details-title">
+  <div class="dialog-heading"><p class="eyebrow" id="lesson-kicker"></p><button id="close-details" aria-label="关闭说明">✕</button></div>
+  <h2 id="details-title"></h2><p id="lesson-body"></p><div class="chain" id="lesson-chain"></div><p id="stage-reading"></p><p id="lesson-insight"></p>
+  <div id="bevel-check" hidden><button id="bevel-turn" disabled>验证：Y5 转 1 圈 → Y6 转 ¼ 圈</button><p id="bevel-result" aria-live="polite">点击验证，读取两只齿轮的实际转角。</p></div>
+  <h3>两路输入如何配合</h3><div class="equation" id="coupling-equation"></div><p id="coupling-note"></p>
+  <h3>调速</h3><p>两轴上限 ±540 rpm，与当前项目限速一致。拖动至 ±10 rpm 内吸附到 0；方向键按 1 rpm 微调。</p>
+  <h3>模型数据</h3><p>CAD 带轮为 28 / 20 齿，固件记录为 32 / 24；演示使用 CAD 齿数，未修改固件。锥齿轮为 15 / 60。</p><p>理想刚体运动，不计算力、摩擦、间隙或碰撞。轴承作为支承简化，归正沿底板 CAD +Y 方向，不代表实物磁编码器标定。正转符号不代表电机接线极性。亮点仅辅助观察转动与带的行进。</p>
+</dialog>
+<script type="module" src="app.js"></script></body></html>
